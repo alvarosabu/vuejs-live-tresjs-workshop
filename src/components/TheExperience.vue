@@ -15,7 +15,10 @@ const state = reactive({
   <TresCanvas v-bind="state">
     <TresPerspectiveCamera :position="[5,5,5]" />
     <OrbitControls />
-
+    <TresMesh :position="[0,2,0]" :rotation="[Math.PI/4, Math.PI /4, 0]">
+      <TresBoxGeometry />
+      <TresMeshNormalMaterial/>
+    </TresMesh>
     <TresAxesHelper />
     <TresGridHelper :args="[10, 10, 0x444444, 'teal']" />
   </TresCanvas>
