@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { TresCanvas } from '@tresjs/core'
+import { TresCanvas,  } from '@tresjs/core'
 import { reactive } from 'vue'
 import { SRGBColorSpace } from 'three'
 import { OrbitControls } from '@tresjs/cientos'
@@ -16,7 +16,7 @@ const state = reactive({
     <TresPerspectiveCamera :position="[5,5,5]" />
     <OrbitControls />
     <TresMesh :position="[0,2,0]" :rotation="[Math.PI/4, Math.PI /4, 0]">
-      <TresBoxGeometry />
+      <TresBoxGeometry :args="[1,1,1]" />
       <TresMeshNormalMaterial/>
     </TresMesh>
     <TresAxesHelper />
