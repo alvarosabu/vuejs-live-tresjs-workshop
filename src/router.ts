@@ -16,6 +16,11 @@ const routes = [
         name: 'Materials',
         component: () => import('./pages/materials.vue'),
     },
+    {
+        path: '/textures',
+        name: 'textures',
+        component: () => import('./pages/textures.vue'),
+    },
 ]
 export const router = createRouter({
     history: createWebHistory(),
