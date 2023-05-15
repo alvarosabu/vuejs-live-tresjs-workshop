@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@alvarosabu/prettier-config": "^1.3.0",
+    "@tresjs/leches": "^0.2.0",
     "@types/three": "^0.152.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "typescript": "^5.0.4",

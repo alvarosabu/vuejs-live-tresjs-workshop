@@ -9,6 +9,8 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    MaterialSphere: typeof import('./src/components/MaterialSphere.vue')['default']
+    MaterialTorusKnot: typeof import('./src/components/MaterialTorusKnot.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheExperience: typeof import('./src/components/TheExperience.vue')['default']
