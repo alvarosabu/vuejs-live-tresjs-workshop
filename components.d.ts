@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AkuAku: typeof import('./src/components/AkuAku.vue')['default']
     MaterialSphere: typeof import('./src/components/MaterialSphere.vue')['default']
     MaterialTorusKnot: typeof import('./src/components/MaterialTorusKnot.vue')['default']
     MySphere: typeof import('./src/components/MySphere.vue')['default']

@@ -26,6 +26,11 @@ const routes = [
         name: 'lights',
         component: () => import('./pages/lights.vue'),
     },
+    {
+        path: '/models',
+        name: 'models',
+        component: () => import('./pages/models.vue'),
+    },
 ]
 export const router = createRouter({
     history: createWebHistory(),
